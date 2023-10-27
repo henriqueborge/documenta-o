@@ -18,3 +18,6 @@ Route::get('/', [Controller::class,'index'])->name('index');
 Route::get('endereco',[Controller::class,'endereco'])->name('endereco');
 Route::post('criar/endereco',[Controller::class,'criar'])->name('criar');
 Route::get('cliente',[Controller::class,'cliente'])->name('cliente');
+Route::get('editar/{id}',[Controller::class,'editar'])->name('editar');
+Route::post('update/{id}',[Controller::class,'update'])->name('update');
+Route::get('deletar/{id}',[Controller::class,'deletar'])->name('deletar');
